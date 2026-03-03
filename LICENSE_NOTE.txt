@@ -1,0 +1,12 @@
+LICENSE / TERMS OF USE
+=====================
+
+This template is sold for use under the license terms provided by the seller at the time of purchase.
+
+Replace this file with your actual LICENSE (e.g. single-site use, extended license, or your own terms) before distributing to buyers.
+
+Common options:
+- Single project/single domain use
+- Use in one end product (client work or own site)
+- No resale as template or theme
+- Attribution optional or required (your choice)
