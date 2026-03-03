@@ -1,24 +1,16 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Toaster } from "sonner";
 import "./globals.css";
 import { companyData } from "@/data/company_data";
 import JsonLd from "@/components/JsonLd";
 import SkipLink from "@/components/SkipLink";
 import CookieConsent from "@/components/CookieConsent";
+import CursorHighlight from "@/components/CursorHighlight";
 
-const display = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-  weight: ["500", "600", "700"],
-});
-
-const sans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-  weight: ["400", "500", "600"],
-});
+const display = GeistSans;
+const sans = GeistMono;
 
 export const metadata: Metadata = {
   title: `${companyData.companyName} — ${companyData.industry} & Corporate Solutions`,
@@ -44,11 +36,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
-      <body className="min-h-screen bg-white text-slate-600 font-sans antialiased">
+      <body className="min-h-screen bg-soft-dark text-platinum font-sans antialiased">
         <JsonLd />
         <SkipLink />
+        <CursorHighlight />
         {children}
         {companyData.cookieConsent?.enabled && <CookieConsent />}
+        <Toaster
+          theme="dark"
+          position="bottom-right"
+          toastOptions={{
+            style: { background: "#0B0D10", border: "1px solid rgba(255,255,255,0.1)", color: "#E1E1E1" },
+          }}
+        />
       </body>
     </html>
   );

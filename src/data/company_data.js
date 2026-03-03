@@ -172,6 +172,14 @@ export const companyData = {
     submitEndpoint: "/api/contact",
   },
 
+  // Scheduling (Calendly or similar)
+  schedule: {
+    title: "Schedule a Call",
+    description: "Prefer a live conversation? Book a 30-minute call with our team.",
+    calendlyUrl: "https://calendly.com/your-company/intro-call",
+    ctaLabel: "Open scheduling",
+  },
+
   // Footer
   footer: {
     copyright: "© 2025 Your Company. All rights reserved.",

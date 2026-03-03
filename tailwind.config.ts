@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "intl-blue": "#0056B3",
-        "intl-blue-dark": "#004494",
-        "slate-custom": "#475569",
+        "electric-indigo": "#6366F1",
+        "electric-indigo-soft": "rgba(99, 102, 241, 0.12)",
+        "soft-dark": "#121417",
+        "soft-dark-elevated": "#0B0D10",
+        "platinum": "#E1E1E1",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
@@ -23,13 +25,13 @@ const config: Config = {
         "30": "7.5rem",
       },
       boxShadow: {
-        "elite": "0 4px 24px -4px rgba(0, 86, 179, 0.08), 0 8px 16px -6px rgba(0, 0, 0, 0.04)",
-        "elite-hover": "0 12px 40px -8px rgba(0, 86, 179, 0.12), 0 16px 24px -8px rgba(0, 0, 0, 0.06)",
-        "card": "0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04)",
-        "card-hover": "0 8px 30px -4px rgba(0, 0, 0, 0.08), 0 4px 12px -4px rgba(0, 0, 0, 0.04)",
+        elite: "0 24px 80px rgba(0, 0, 0, 0.9)",
+        "elite-soft": "0 20px 60px rgba(15, 23, 42, 0.85)",
+        card: "0 1px 0 rgba(255, 255, 255, 0.02), 0 20px 60px rgba(15, 23, 42, 0.85)",
+        "card-hover": "0 1px 0 rgba(255, 255, 255, 0.06), 0 32px 90px rgba(15, 23, 42, 0.95)",
       },
       borderRadius: {
-        "xl": "1rem",
+        xl: "1rem",
         "2xl": "1.25rem",
       },
       animation: {
@@ -38,7 +40,10 @@ const config: Config = {
       },
       keyframes: {
         fadeIn: { "0%": { opacity: "0" }, "100%": { opacity: "1" } },
-        slideUp: { "0%": { opacity: "0", transform: "translateY(12px)" }, "100%": { opacity: "1", transform: "translateY(0)" } },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(12px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
     },
   },
