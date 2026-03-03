@@ -41,8 +41,14 @@
 
 ---
 
+## License
+
+**Cadu Systems** — After you complete your purchase, you own your copy of the code. You can use it for unlimited projects, client work, and modify it as you like. Full terms are in **[LICENSE.txt](LICENSE.txt)**.
+
+---
+
 ## Support
 
-For template setup and customization, use the docs above. For licensing or purchase support, contact the seller from the store where you bought the template.
+For template setup and customization, use the docs above. For licensing or purchase support, contact **Cadu Systems** via your point of purchase (e.g. Gumroad).
 
 **Requirements:** Node.js 18+ and basic familiarity with editing a JavaScript/JSON file. No backend or database is required for the template to run; the contact form can be connected to your own email service or API later.
